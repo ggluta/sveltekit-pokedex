@@ -11,8 +11,8 @@ const fetchPokemons = async () => {
     const loadedPokemons = data.results.map((pokemon, index) => {
         return {
             name: pokemon.name,
-            id: index++,
-            image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index++}.png`
+            id: index + 1,
+            image: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`
         }
     });
 
